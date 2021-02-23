@@ -186,9 +186,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    @include md-down() {
-      word-break: break-all;
-    }
+    word-break: break-all;
   }
 }
 
