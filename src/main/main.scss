@@ -130,7 +130,7 @@ main {
   padding-top: 5rem;
   padding-left: 5rem;
   @include md-down() {
-    padding: 1rem 1rem 0;
+    padding: 1rem 1rem;
   }
 }
 .repos {
@@ -142,9 +142,15 @@ main {
 .cards {
   padding: 0 5rem;
   overflow-y: scroll;
+  border-radius: 2rem;
   @include md-down() {
     padding: 0 1rem;
+
+    .repo_description {
+        font-size: 14px;
+    }
   }
+  
 }
 .card {
   display: flex;
@@ -159,6 +165,7 @@ main {
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   @include md-down() {
     padding: 10px;
+    margin: 0 0 1rem;
   }
   .avatar_repo {
     width: 50px;
@@ -194,4 +201,11 @@ main {
   border-radius: 16px;
   box-shadow: 0 3px 4px 0 transparentize($color: #eb6ce1, $amount: 0);
   align-self: flex-start;
+}
+
+h1,
+h2 {
+  @include md-down() {
+    font-size: 18px;
+  }
 }
