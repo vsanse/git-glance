@@ -44,7 +44,7 @@ export default function Main() {
                 <div className="card-info">
                   <h2>{repo?.name}</h2>
                   <p className="repo_description">{repo?.description}</p>
-                  <a href={repo?.homepage || repo?.html_url} className="view_code" target="__blank">View Code</a>
+                  <a href={repo?.html_url} className="view_code" target="__blank">View Code</a>
                 </div>
               </div>
             ))}
