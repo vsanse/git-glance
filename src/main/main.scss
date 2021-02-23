@@ -199,7 +199,7 @@ main {
   margin-top: 10px;
   display: inline-block;
   border-radius: 16px;
-  box-shadow: 0 3px 4px 0 transparentize($color: #eb6ce1, $amount: 0);
+  box-shadow: 0 3px 4px 0 rgba($color: #000000, $alpha: 0.3);
   align-self: flex-start;
 }
 
@@ -207,5 +207,13 @@ h1,
 h2 {
   @include md-down() {
     font-size: 18px;
+  }
+}
+
+.repo_btns {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    margin-right: 10px;
   }
 }

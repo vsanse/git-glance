@@ -25,7 +25,9 @@ export default function Main() {
             <h3>{userData?.name}</h3>
             <p>Frontend Engineer</p>
             {userData?.html_url && (
-              <a href={userData?.html_url} className="follow_me">+ Follow</a>
+              <a href={userData?.html_url} className="follow_me">
+                + Follow
+              </a>
             )}
           </div>
           <div className="links"></div>
@@ -44,7 +46,26 @@ export default function Main() {
                 <div className="card-info">
                   <h2>{repo?.name}</h2>
                   <p className="repo_description">{repo?.description}</p>
-                  <a href={repo?.html_url} className="view_code" target="__blank">View Code</a>
+                  <div className="repo_btns">
+                    <a
+                      href={repo?.html_url}
+                      className="view_code"
+                      target="__blank"
+                      title="View Code"
+                    >
+                      <i className="fa fa-code" aria-hidden="true"></i>
+                    </a>
+                    {repo?.homepage && (
+                      <a
+                        href={repo?.homepage}
+                        className="view_code"
+                        target="__blank"
+                        title="View Live"
+                      >
+                        <i className="fa fa fa-chrome" aria-hidden="true"></i>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
