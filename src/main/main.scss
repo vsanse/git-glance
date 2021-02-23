@@ -126,19 +126,22 @@ main {
   }
 }
 
-.status {
-  padding-top: 5rem;
-  padding-left: 5rem;
-  @include md-down() {
-    padding: 1rem 1rem;
-  }
-}
 .repos {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
 }
+
+.status {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  @include md-down() {
+    padding: 1rem 1rem;
+  }
+}
+
 .cards {
   padding: 0 5rem;
   overflow-y: scroll;
@@ -147,10 +150,9 @@ main {
     padding: 0 1rem;
 
     .repo_description {
-        font-size: 14px;
+      font-size: 14px;
     }
   }
-  
 }
 .card {
   display: flex;
@@ -160,7 +162,7 @@ main {
     rgba(255, 255, 255, 0.2)
   );
   border-radius: 1rem;
-  margin: 2rem 0rem;
+  margin: 0 0rem 2rem;
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   @include md-down() {
